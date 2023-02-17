@@ -8,8 +8,8 @@ import { defineComponent } from 'vue'
   <div class=" p-2 pb-0  flex-column light_blue" >     
     <div class=" row align-items-start  ">
     <div class="col">
-      <h6>About Us</h6>
-    <p class="text-dark" style="text-align:left">Vida Vodka was developed as an eco friendly vodka company that prioritises quality and taste, using waste bread and our patented method.  </p>
+      <h6></h6>
+    <p class="text-dark" style="text-align:left"></p>
     </div>
     <div class="col ">     
       <a href="#!" class="text-dark">CONTACT US</a>
@@ -26,8 +26,9 @@ import { defineComponent } from 'vue'
 </template>
 <style scoped>
 footer {
-  
-  width: auto;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
   height: 50px;
 }
 .footbuttons {
