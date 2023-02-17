@@ -4,38 +4,19 @@ import { defineComponent } from 'vue'
 </script>
 <template>
 
-<nav class="navbar navbar-expand-lg navbar-dark border-bottom ">
+<nav class="navbar navbar-expand">
   
-  <a class="navbar-brand my-40" href="#"><img src="./assets/Vida_txt.png" class="logo" alt="Vite logo" /></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    
-  </button>
+  <a class="navbar-brand my-40" href="#"><img src="./assets/logo.png" class="logo" alt="Vite logo" /></a>
 
-  <div class="collapse navbar-collapse position-absolute  end-0" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+
+  <div class="position-absolute end-0 " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ">
+       
       <li class="nav-item active">
-        <router-link class="nav" to="/auction101">Home</router-link>
-            
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>          
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+        <a class="nav-link" href="#"><img src="./assets/shopping.png" class="navbuttons" alt="Shop"/></a>          
       </li>
       
+           
     </ul>
     
   </div>
@@ -46,15 +27,28 @@ import { defineComponent } from 'vue'
 <style scoped>
 
 nav {
-    background-color: #242424;
+    background-color: #ddffff;
     display: flex;
+    position: inherit;
+    height: 50px;
+    
 }
 
 .logo {
-  width:70px;
-  height: auto;
+  width:150px;
+  height: 150px;
+  left: 120px;
+  top: 60px;
   position: relative;
-  left: 10px;
+  z-index: 100;
+}
+
+.navbuttons {
+  width:20px;
+  height: auto;
+  color:black;
+
+  
 }
 .handwritten {
     font-family: Pacifico, cursive;
@@ -63,6 +57,19 @@ nav {
 .navElements {
     font-size: 144%;
     text-decoration: none;
+}
+
+.end-0 {
+    right: 20px !important;
+}
+
+@media (max-width: 1000px) {
+  .logo {
+  
+  left: 40px;
+
+}
+
 }
 </style>
 
