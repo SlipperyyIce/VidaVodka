@@ -1,6 +1,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
-
+export default {
+};
 </script>
 <template>
 <footer class="text-center light_blue" >

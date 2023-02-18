@@ -1,4 +1,5 @@
 # Vida Vodka Website 
 
-This is a website I built for my friends business 
+This is a website I build for my friends business 
+
 
